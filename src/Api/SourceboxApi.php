@@ -87,6 +87,6 @@ class SourceboxApi extends ApiBase
             'multipart' => $multipart
         ]);
 
-        return (new XmlToModel($xmlData, CvModel::class))->getModel();
+        return $xmlData;
     }
 }
